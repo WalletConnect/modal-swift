@@ -15,21 +15,53 @@ let package = Package(
             name: "Web3Modal",
             targets: ["Web3Modal"]
         ),
+        .library(
+            name: "WCModal",
+            targets: ["WCModal"]
+        )
     ],
     dependencies: [
-        .package(url: "https://github.com/WalletConnect/WalletConnectSwiftV2", .upToNextMajor(from: "1.6.17"))
+        .package(
+            url: "https://github.com/WalletConnect/WalletConnectSwiftV2",
+            .upToNextMajor(from: "1.6.17")
+        ),
+        .package(url: "https://github.com/WalletConnect/QRCode", from: "14.3.1")
     ],
     targets: [
         .target(
             name: "Web3Modal",
             dependencies: [
-                .product(name: "WalletConnect", package: "WalletConnectSwiftV2"),
+                .product(
+                    name: "WalletConnect",
+                    package: "WalletConnectSwiftV2"
+                )
             ]
         ),
+        .target(
+            name: "WCModal",
+            dependencies: [
+                "QRCode",
+                .product(
+                    name: "WalletConnect",
+                    package: "WalletConnectSwiftV2"
+                )
+            ],
+            exclude: ["Secrets/secrets.json.sample"],
+            resources: [
+                .copy("Secrets/secrets.json"),
+                .copy("Resources/Assets.xcassets")
+            ]
+        ),
+
         // MARK: - Test Targets
+
         .testTarget(
             name: "Web3ModalTests",
             dependencies: ["Web3Modal"]
         ),
+        .testTarget(
+            name: "WCModalTests",
+            dependencies: ["WCModal"]
+        )
     ]
 )
