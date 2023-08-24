@@ -27,6 +27,7 @@
 		CFCB0F4D2A8A2DCB0082178C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFCB0F4F2A8A2DCB0082178C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFCB0F502A8A2DCB0082178C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CFE6DE172A976B6000FE6D5F /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		CF8170F62A86621A0047E5AF = {
 			isa = PBXGroup;
 			children = (
+				CFE6DE172A976B6000FE6D5F /* UnitTests.xctestplan */,
 				CFCB0F4B2A8A2DCB0082178C /* Example */,
 				CF533E892A8A275000E73C20 /* Web3Modal */,
 				CF8171002A86621A0047E5AF /* Products */,

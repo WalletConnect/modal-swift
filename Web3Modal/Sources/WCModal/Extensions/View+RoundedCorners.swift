@@ -78,7 +78,6 @@ struct RoundedCorner: Shape {
     }
 }
 
-
 extension View {
     func cornerRadius(_ radius: CGFloat, corners: RectCorner) -> some View {
         clipShape( RoundedCorner(radius: radius, corners: corners) )
@@ -86,5 +85,3 @@ extension View {
 }
 
 #endif
-
-

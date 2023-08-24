@@ -1,5 +1,5 @@
-import TestingUtils
-@testable import WalletConnectModal
+//import TestingUtils
+@testable import WCModal
 import XCTest
 
 final class ModalViewModelTests: XCTestCase {

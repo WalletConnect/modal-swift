@@ -1,5 +1,4 @@
-import TestingUtils
-@testable import WalletConnectModal
+@testable import WCModal
 import XCTest
 
 final class ExplorerAPITests: XCTestCase {
@@ -7,7 +6,7 @@ final class ExplorerAPITests: XCTestCase {
     func testCorrectMappingOfWalletIds() throws {
         
         let request = ExplorerAPI
-            .getListings(projectId: "123", metadata: .stub(), recommendedIds: ["foo", "bar"], excludedIds: ["boo", "far"])
+            .getListings(projectId: "123", metadata: AppMetadata(name: "Wallet Connect", description: "", url: "", icons: []), recommendedIds: ["foo", "bar"], excludedIds: ["boo", "far"])
             .resolve(for: "www.google.com")
         
         XCTAssertEqual(request?.allHTTPHeaderFields?["Referer"], "Wallet Connect")

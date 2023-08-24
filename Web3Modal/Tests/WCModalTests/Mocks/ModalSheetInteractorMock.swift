@@ -1,8 +1,7 @@
 import Combine
 import Foundation
-import WalletConnectSign
 import WalletConnectUtils
-@testable import WalletConnectModal
+@testable import WCModal
 @testable import WalletConnectSign
 
 final class ModalSheetInteractorMock: ModalSheetInteractor {
@@ -22,7 +21,7 @@ final class ModalSheetInteractorMock: ModalSheetInteractor {
     }
     
     var sessionSettlePublisher: AnyPublisher<Session, Never> {
-        Result.Publisher(Session(topic: "", pairingTopic: "", peer: .stub(), requiredNamespaces: [:], namespaces: [:], sessionProperties: nil, expiryDate: Date()))
+        Result.Publisher(Session(topic: "", pairingTopic: "", peer: AppMetadata(name: "", description: "", url: "", icons: []), requiredNamespaces: [:], namespaces: [:], sessionProperties: nil, expiryDate: Date()))
             .eraseToAnyPublisher()
     }
     

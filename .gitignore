@@ -90,3 +90,7 @@ fastlane/test_output
 iOSInjectionProject/
 
 ExampleApp/Web3Modal/Sources/WCModal/Secrets/secrets.json
+
+DerivedDataCache/
+
+test_results/
