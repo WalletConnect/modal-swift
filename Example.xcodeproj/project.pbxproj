@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF52ADCF2A94B9E2005D884A /* WCModal in Frameworks */ = {isa = PBXBuildFile; productRef = CF52ADCE2A94B9E2005D884A /* WCModal */; };
 		CF52ADD12A94BE07005D884A /* WebSocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52ADD02A94BE07005D884A /* WebSocketFactory.swift */; };
-		CF52ADD42A950394005D884A /* Atlantis in Frameworks */ = {isa = PBXBuildFile; productRef = CF52ADD32A950394005D884A /* Atlantis */; };
-		CF533E8A2A8A275000E73C20 /* Web3Modal in Resources */ = {isa = PBXBuildFile; fileRef = CF533E892A8A275000E73C20 /* Web3Modal */; };
-		CF533E8D2A8A290C00E73C20 /* Web3Modal in Frameworks */ = {isa = PBXBuildFile; productRef = CF533E8C2A8A290C00E73C20 /* Web3Modal */; };
+		CF72BDDB2A98B75700FD101D /* WalletConnectModal in Frameworks */ = {isa = PBXBuildFile; productRef = CF72BDDA2A98B75700FD101D /* WalletConnectModal */; };
 		CFCB0F522A8A2DCB0082178C /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB0F4C2A8A2DCB0082178C /* ExampleApp.swift */; };
 		CFCB0F532A8A2DCB0082178C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCB0F4D2A8A2DCB0082178C /* Assets.xcassets */; };
 		CFCB0F542A8A2DCB0082178C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCB0F4F2A8A2DCB0082178C /* Preview Assets.xcassets */; };
@@ -21,7 +18,7 @@
 /* Begin PBXFileReference section */
 		CF52ADD02A94BE07005D884A /* WebSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketFactory.swift; sourceTree = "<group>"; };
 		CF52ADD52A950492005D884A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		CF533E892A8A275000E73C20 /* Web3Modal */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Web3Modal; sourceTree = "<group>"; };
+		CF5593202A97B371004BFFCC /* WalletConnectModal */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WalletConnectModal; sourceTree = "<group>"; };
 		CF8170FF2A86621A0047E5AF /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCB0F4C2A8A2DCB0082178C /* ExampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		CFCB0F4D2A8A2DCB0082178C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,9 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF52ADCF2A94B9E2005D884A /* WCModal in Frameworks */,
-				CF52ADD42A950394005D884A /* Atlantis in Frameworks */,
-				CF533E8D2A8A290C00E73C20 /* Web3Modal in Frameworks */,
+				CF72BDDB2A98B75700FD101D /* WalletConnectModal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +51,9 @@
 			children = (
 				CFE6DE172A976B6000FE6D5F /* UnitTests.xctestplan */,
 				CFCB0F4B2A8A2DCB0082178C /* Example */,
-				CF533E892A8A275000E73C20 /* Web3Modal */,
 				CF8171002A86621A0047E5AF /* Products */,
 				CF533E8B2A8A290C00E73C20 /* Frameworks */,
+				CF5593202A97B371004BFFCC /* WalletConnectModal */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +103,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				CF533E8C2A8A290C00E73C20 /* Web3Modal */,
-				CF52ADCE2A94B9E2005D884A /* WCModal */,
-				CF52ADD32A950394005D884A /* Atlantis */,
+				CF72BDDA2A98B75700FD101D /* WalletConnectModal */,
 			);
 			productName = ExampleApp;
 			productReference = CF8170FF2A86621A0047E5AF /* Example.app */;
@@ -141,7 +134,6 @@
 			);
 			mainGroup = CF8170F62A86621A0047E5AF;
 			packageReferences = (
-				CF52ADD22A950394005D884A /* XCRemoteSwiftPackageReference "atlantis" */,
 			);
 			productRefGroup = CF8171002A86621A0047E5AF /* Products */;
 			projectDirPath = "";
@@ -159,7 +151,6 @@
 			files = (
 				CFCB0F532A8A2DCB0082178C /* Assets.xcassets in Resources */,
 				CFCB0F542A8A2DCB0082178C /* Preview Assets.xcassets in Resources */,
-				CF533E8A2A8A275000E73C20 /* Web3Modal in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +311,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walletconnect.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,7 +350,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walletconnect.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,30 +385,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		CF52ADD22A950394005D884A /* XCRemoteSwiftPackageReference "atlantis" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ProxymanApp/atlantis";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.22.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		CF52ADCE2A94B9E2005D884A /* WCModal */ = {
+		CF72BDDA2A98B75700FD101D /* WalletConnectModal */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = WCModal;
-		};
-		CF52ADD32A950394005D884A /* Atlantis */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CF52ADD22A950394005D884A /* XCRemoteSwiftPackageReference "atlantis" */;
-			productName = Atlantis;
-		};
-		CF533E8C2A8A290C00E73C20 /* Web3Modal */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Web3Modal;
+			productName = WalletConnectModal;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

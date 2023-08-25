@@ -1,14 +1,10 @@
 import SwiftUI
-import Web3Modal
-import WCModal
+import WalletConnectModal
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Web3ModalHelloWorld()
-            
             Button("WalletConnectModal") {
- 
                 let metadata = AppMetadata(
                     name: "Demo Dapp",
                     description: "WalletConnectModal DApp sample",

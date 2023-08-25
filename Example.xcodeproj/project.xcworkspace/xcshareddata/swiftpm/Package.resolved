@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "atlantis",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ProxymanApp/atlantis",
-      "state" : {
-        "revision" : "cfa72085bce2600b28e47fdbbbfa2d5b96f0392b",
-        "version" : "1.22.0"
-      }
-    },
-    {
       "identity" : "qrcode",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/WalletConnect/QRCode",
@@ -41,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/WalletConnect/WalletConnectSwiftV2",
       "state" : {
-        "revision" : "5199a4db3119540f98ab0d21d3c744f833ae2747",
-        "version" : "1.6.17"
+        "branch" : "remove-wcm",
+        "revision" : "36feb0887ff53431b71c5ca8cbd7d9c0e3fa5d58"
       }
     }
   ],

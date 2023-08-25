@@ -4,41 +4,28 @@
 import PackageDescription
 
 let package = Package(
-    name: "Web3Modal",
+    name: "swift-wallet-connect-modal",
     platforms: [
         .iOS(.v15),
-        .macOS(.v13),
+        .macOS(.v12),
         .tvOS(.v15)
     ],
     products: [
         .library(
-            name: "Web3Modal",
-            targets: ["Web3Modal"]
-        ),
-        .library(
-            name: "WCModal",
-            targets: ["WCModal"]
+            name: "WalletConnectModal",
+            targets: ["WalletConnectModal"]
         )
     ],
     dependencies: [
         .package(
             url: "https://github.com/WalletConnect/WalletConnectSwiftV2",
-            .upToNextMajor(from: "1.6.17")
+            branch: "remove-wcm" // This is branch which has wcm already removed so we don't have to worry about target name conflicts
         ),
         .package(url: "https://github.com/WalletConnect/QRCode", from: "14.3.1")
     ],
     targets: [
         .target(
-            name: "Web3Modal",
-            dependencies: [
-                .product(
-                    name: "WalletConnect",
-                    package: "WalletConnectSwiftV2"
-                )
-            ]
-        ),
-        .target(
-            name: "WCModal",
+            name: "WalletConnectModal",
             dependencies: [
                 "QRCode",
                 .product(
@@ -50,18 +37,14 @@ let package = Package(
             resources: [
                 .copy("Secrets/secrets.json"),
                 .copy("Resources/Assets.xcassets")
+                
             ]
         ),
-
         // MARK: - Test Targets
 
         .testTarget(
-            name: "Web3ModalTests",
-            dependencies: ["Web3Modal"]
-        ),
-        .testTarget(
-            name: "WCModalTests",
-            dependencies: ["WCModal"]
+            name: "WalletConnectModalTests",
+            dependencies: ["WalletConnectModal"]
         )
     ]
 )
